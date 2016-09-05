@@ -6,10 +6,6 @@ func Mergesort(arr []int) []int {
     return mergesortActual(arr, pivotPointFn(arr))
 }
 
-func pivotPointFn(arr []int) int {
-    return len(arr) / 2
-}
-
 func mergesortActual(arr []int, pivotPoint int) []int {
     if pivotPoint > 0 {
         left := arr[0:pivotPoint]
