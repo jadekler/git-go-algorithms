@@ -2,7 +2,7 @@ package sort_test
 
 import (
     "testing"
-    "git-go-algorithms/sort"
+    "algorithms/sort"
     "reflect"
 )
 

@@ -2,7 +2,7 @@ package problems_test
 
 import (
     "testing"
-    "git-go-algorithms/problems"
+    "algorithms/problems"
     "reflect"
 )
 
