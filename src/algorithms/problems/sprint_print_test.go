@@ -42,12 +42,12 @@ func TestSpiralPrintSingleColumn(t *testing.T) {
 }
 
 // [
-//  [ 3 2 1 ]
+//  [ 1 2 3 ]
 //  [ 6 5 4 ]
 //           ]
 func TestSpiralPrintTwoRow(t *testing.T) {
-    expected := []int{3, 2, 1, 4, 5, 6}
-    actual := problems.SpiralPrint([][]int{[]int{3, 2, 1}, []int{6, 5, 4}})
+    expected := []int{1, 2, 3, 4, 5, 6}
+    actual := problems.SpiralPrint([][]int{[]int{1, 2, 3}, []int{6, 5, 4}})
 
     if !reflect.DeepEqual(actual, expected) {
         t.Logf("Expected %v, got %v\n", expected, actual)
@@ -56,13 +56,13 @@ func TestSpiralPrintTwoRow(t *testing.T) {
 }
 
 // [
-//  [ 3 6 ]
-//  [ 2 5 ]
-//  [ 1 4 ]
+//  [ 1 2 ]
+//  [ 6 3 ]
+//  [ 5 4 ]
 //         ]
 func TestSpiralPrintTwoColumn(t *testing.T) {
-    expected := []int{3, 6, 5, 4, 1, 2}
-    actual := problems.SpiralPrint([][]int{[]int{3, 6}, []int{2, 5}, []int{1, 4}})
+    expected := []int{1, 2, 3, 4, 5, 6}
+    actual := problems.SpiralPrint([][]int{[]int{1, 2}, []int{6, 3}, []int{5, 4}})
 
     if !reflect.DeepEqual(actual, expected) {
         t.Logf("Expected %v, got %v\n", expected, actual)
